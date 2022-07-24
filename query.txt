@@ -1,0 +1,1 @@
+cpg.method.isExternal(false).nameNot(".*<.*>.*").map(node => (node.id, node.methodReturn.id, node.name, node.filename, node.lineNumber.l, node.dotCfg.l)).toJsonPretty |> "methods.txt"
