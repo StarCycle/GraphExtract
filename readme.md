@@ -1,4 +1,4 @@
-## Extract inter-procedural control flow graph from C/C++ source code
+## Extract inter-procedural control flow graph from C/C++ source code for graph neural networks
 This script is based on the open-source code analysis tool **Joern** (joern.io). 
 
 After parsing the source code, Joern can generate a control flow graph (CFG) for every function in the program. However, it cannot generate a single CFG for the whole program. In other words, **Joern cannot find the link between a function call and the called function (until Nov 2022)**. For example, if there is a Reset() call in the program, we cannot directly find where the definition of Reset() is.
